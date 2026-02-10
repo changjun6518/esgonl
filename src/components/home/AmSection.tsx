@@ -10,11 +10,14 @@ export default function AmSection() {
   const data = articles as Article[];
 
   return (
-    <section className="home-section">
+    <section className="home-section section-am">
       <div className="home-section-inner">
         <div className="home-section-header">
           <div className="home-section-title-group">
-            <span className="home-section-label">AM Coffee & Bagel</span>
+            <span className="home-section-label">
+              <span className="home-section-time-icon">{'\u2615'}</span>
+              AM Coffee &amp; Bagel
+            </span>
             <h2 className="home-section-title">기획기사, 인터뷰</h2>
           </div>
           <Link to="/article/amList" className="more-link">

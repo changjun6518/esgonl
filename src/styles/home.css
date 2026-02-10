@@ -1,15 +1,15 @@
-/* 메인 페이지 */
+/* ============================================
+   Home Page - Time-of-Day Editorial Sections
+   ============================================ */
+
 .home-page {
-  padding-bottom: var(--spacing-3xl);
+  padding-bottom: 0;
 }
 
-/* 섹션 공통 */
+/* === Section Base === */
 .home-section {
-  padding: var(--spacing-2xl) 0;
-}
-
-.home-section:nth-child(even) {
-  background-color: var(--color-bg-section);
+  padding: var(--spacing-3xl) 0;
+  position: relative;
 }
 
 .home-section-inner {
@@ -18,6 +18,7 @@
   padding: 0 var(--spacing-lg);
 }
 
+/* Section Header */
 .home-section-header {
   display: flex;
   align-items: flex-end;
@@ -28,30 +29,256 @@
 .home-section-title-group {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 6px;
 }
 
 .home-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+}
+
+.home-section-time-icon {
+  font-size: var(--font-size-sm);
+  line-height: 1;
 }
 
 .home-section-title {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
+  line-height: var(--line-height-tight);
 }
 
 .home-section-subtitle {
   font-size: var(--font-size-sm);
-  color: var(--color-text-light);
-  margin-top: var(--spacing-xs);
+  margin-top: 4px;
 }
 
-/* 캐러셀 카드 */
+/* === AM Section - Morning Coffee === */
+.section-am {
+  background: var(--am-gradient);
+}
+
+.section-am .home-section-label {
+  color: var(--am-accent);
+}
+
+.section-am .home-section-title {
+  color: var(--am-text);
+}
+
+.section-am .home-section-subtitle {
+  color: var(--am-dot);
+}
+
+.section-am .more-link {
+  color: var(--am-accent);
+}
+
+.section-am .more-link:hover {
+  color: var(--am-accent-hover);
+}
+
+.section-am .carousel-card-category {
+  color: var(--am-accent);
+  background-color: var(--am-accent-light);
+}
+
+.section-am .carousel-card-readmore {
+  color: var(--am-accent);
+}
+
+.section-am .swiper-pagination-bullet-active {
+  background: var(--am-accent);
+}
+
+/* === Noon Section - Lunch Learning === */
+.section-noon {
+  background: var(--noon-gradient);
+}
+
+.section-noon .home-section-label {
+  color: var(--noon-accent);
+}
+
+.section-noon .home-section-title {
+  color: var(--noon-text);
+}
+
+.section-noon .home-section-subtitle {
+  color: var(--noon-dot);
+}
+
+.section-noon .more-link {
+  color: var(--noon-accent);
+}
+
+.section-noon .more-link:hover {
+  color: var(--noon-accent-hover);
+}
+
+.section-noon .carousel-card-category {
+  color: var(--noon-accent);
+  background-color: var(--noon-accent-light);
+}
+
+.section-noon .carousel-card-readmore {
+  color: var(--noon-accent);
+}
+
+.section-noon .swiper-pagination-bullet-active {
+  background: var(--noon-accent);
+}
+
+/* === Snack Section - Fortune Cookie === */
+.section-snack {
+  background: var(--snack-gradient);
+  text-align: center;
+  padding: var(--spacing-4xl) 0;
+}
+
+.section-snack .home-section-header {
+  justify-content: center;
+  text-align: center;
+}
+
+.section-snack .home-section-title-group {
+  align-items: center;
+}
+
+.section-snack .home-section-label {
+  color: var(--snack-accent);
+}
+
+.section-snack .home-section-title {
+  color: var(--snack-text);
+}
+
+.snack-quote-card {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--color-bg);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.snack-quote-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--snack-accent), var(--snack-dot));
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+}
+
+.snack-icon {
+  font-size: 40px;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1;
+}
+
+.snack-quote-text {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  padding: 0 var(--spacing-md);
+}
+
+.snack-quote-text::before {
+  content: '\201C';
+  font-size: 3rem;
+  color: var(--snack-accent);
+  opacity: 0.3;
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.snack-quote-text::after {
+  content: '\201D';
+  font-size: 3rem;
+  color: var(--snack-accent);
+  opacity: 0.3;
+  position: absolute;
+  bottom: -20px;
+  right: -8px;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.snack-attribution {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-medium);
+}
+
+.snack-more-link {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.section-snack .more-link {
+  color: var(--snack-accent);
+}
+
+.section-snack .more-link:hover {
+  color: var(--snack-accent-hover);
+}
+
+/* === PM Section - Evening Tea === */
+.section-pm {
+  background: var(--pm-gradient);
+}
+
+.section-pm .home-section-label {
+  color: var(--pm-accent);
+}
+
+.section-pm .home-section-title {
+  color: var(--pm-text);
+}
+
+.section-pm .home-section-subtitle {
+  color: var(--pm-dot);
+}
+
+.section-pm .more-link {
+  color: var(--pm-accent);
+}
+
+.section-pm .more-link:hover {
+  color: var(--pm-accent-hover);
+}
+
+.section-pm .carousel-card-category {
+  color: var(--pm-accent);
+  background-color: var(--pm-accent-light);
+}
+
+.section-pm .carousel-card-readmore {
+  color: var(--pm-accent);
+}
+
+.section-pm .swiper-pagination-bullet-active {
+  background: var(--pm-accent);
+}
+
+/* ============================
+   Carousel Card - Shared
+   ============================ */
 .carousel-card {
   display: block;
   border-radius: var(--border-radius-lg);
@@ -64,14 +291,14 @@
 
 .carousel-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .carousel-card-image {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  background-color: var(--color-bg-section);
+  background-color: var(--color-bg-light);
 }
 
 .carousel-card-body {
@@ -79,10 +306,13 @@
 }
 
 .carousel-card-category {
-  font-size: var(--font-size-xs);
-  color: var(--color-accent);
-  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  font-size: 11px;
+  font-weight: var(--font-weight-semibold);
+  padding: 3px 10px;
+  border-radius: 12px;
   margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.01em;
 }
 
 .carousel-card-title {
@@ -118,65 +348,13 @@
 
 .carousel-card-readmore {
   font-size: var(--font-size-xs);
-  color: var(--color-accent);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.01em;
 }
 
-/* Snack 섹션 (특수 레이아웃) */
-.snack-section {
-  text-align: center;
-  padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e8edf3 100%);
-}
-
-.snack-quote-card {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: var(--spacing-2xl) var(--spacing-xl);
-  background: var(--color-bg);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-}
-
-.snack-icon {
-  font-size: 48px;
-  margin-bottom: var(--spacing-lg);
-}
-
-.snack-quote-text {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-  line-height: var(--line-height-loose);
-  margin-bottom: var(--spacing-lg);
-  word-break: keep-all;
-}
-
-.snack-quote-text::before {
-  content: '\201C';
-  font-size: var(--font-size-2xl);
-  color: var(--color-accent);
-  vertical-align: text-top;
-  line-height: 0;
-  margin-right: 4px;
-}
-
-.snack-quote-text::after {
-  content: '\201D';
-  font-size: var(--font-size-2xl);
-  color: var(--color-accent);
-  vertical-align: text-bottom;
-  line-height: 0;
-  margin-left: 4px;
-}
-
-.snack-attribution {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-light);
-  font-style: italic;
-}
-
-/* Swiper 커스텀 */
+/* ============================
+   Swiper Customization
+   ============================ */
 .home-section .swiper {
   padding-bottom: var(--spacing-2xl);
 }
@@ -186,20 +364,34 @@
   height: 8px;
   background: var(--color-border);
   opacity: 1;
+  transition: all var(--transition-fast);
 }
 
 .home-section .swiper-pagination-bullet-active {
-  background: var(--color-primary);
   width: 24px;
   border-radius: 4px;
 }
 
-/* 반응형 */
+/* ============================
+   Responsive
+   ============================ */
 @media (max-width: 768px) {
+  .home-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .section-snack {
+    padding: var(--spacing-2xl) 0;
+  }
+
   .home-section-header {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-sm);
+  }
+
+  .section-snack .home-section-header {
+    align-items: center;
   }
 
   .home-section-title {
@@ -208,10 +400,15 @@
 
   .snack-quote-card {
     margin: 0 var(--spacing-md);
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-lg);
   }
 
   .snack-quote-text {
     font-size: var(--font-size-base);
+  }
+
+  .snack-quote-text::before,
+  .snack-quote-text::after {
+    font-size: 2rem;
   }
 }

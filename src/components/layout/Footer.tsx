@@ -7,7 +7,8 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-top">
           <div className="footer-logo">
-            ESG<span className="logo-dot">.</span>ONL
+            <div>ESG<span className="logo-dot">.</span>ONL</div>
+            <div className="footer-tagline">내일을 위한 오늘의 매거진</div>
           </div>
           <div className="footer-social">
             <a

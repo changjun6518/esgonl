@@ -1,7 +1,8 @@
+/* === Footer - Dark Editorial === */
 .footer {
   background-color: var(--color-primary);
   color: #ffffff;
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-3xl) 0 var(--spacing-xl);
 }
 
 .footer-inner {
@@ -13,41 +14,52 @@
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: var(--spacing-xl);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-logo {
-  font-size: var(--font-size-lg);
+  font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
   color: #ffffff;
+  letter-spacing: -0.5px;
 }
 
 .footer-logo .logo-dot {
-  color: #4CAF50;
+  color: #6BCB77;
+}
+
+.footer-tagline {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 4px;
+  letter-spacing: 0.05em;
 }
 
 .footer-social {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .footer-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  font-size: var(--font-size-sm);
-  transition: background-color var(--transition-fast);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  transition: all var(--transition-fast);
 }
 
 .footer-social-link:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
 }
 
 .footer-bottom {
@@ -64,19 +76,19 @@
 
 .footer-company {
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-sm);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-details {
   font-size: var(--font-size-xs);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   line-height: var(--line-height-loose);
 }
 
 .footer-details p {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: 2px;
 }
 
 .footer-links {
@@ -86,27 +98,29 @@
 
 .footer-link {
   font-size: var(--font-size-xs);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-copyright {
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
   padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   text-align: center;
   font-size: var(--font-size-xs);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.02em;
 }
 
-/* 반응형 */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
+    align-items: flex-start;
     gap: var(--spacing-md);
   }
 

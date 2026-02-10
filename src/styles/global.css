@@ -1,7 +1,7 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 @import './variables.css';
 
-/* 리셋 */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: var(--font-size-base);
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -23,6 +23,8 @@ body {
   line-height: var(--line-height-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -52,7 +54,7 @@ input, textarea, select {
   font-size: inherit;
 }
 
-/* 공통 레이아웃 */
+/* Layout Utilities */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -71,7 +73,7 @@ input, textarea, select {
   border: 0;
 }
 
-/* 섹션 공통 */
+/* Section Base */
 .section {
   padding: var(--spacing-3xl) 0;
 }
@@ -93,15 +95,23 @@ input, textarea, select {
   color: var(--color-text-light);
 }
 
+/* More Link */
 .more-link {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: 6px;
   font-size: var(--font-size-sm);
-  color: var(--color-text-light);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
   transition: color var(--transition-fast);
+  letter-spacing: 0.02em;
 }
 
 .more-link:hover {
-  color: var(--color-primary);
+  color: var(--color-text);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(28, 28, 40, 0.08);
 }

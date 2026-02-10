@@ -10,11 +10,14 @@ export default function PmSection() {
   const data = articles as Article[];
 
   return (
-    <section className="home-section">
+    <section className="home-section section-pm">
       <div className="home-section-inner">
         <div className="home-section-header">
           <div className="home-section-title-group">
-            <span className="home-section-label">PM Tea Time</span>
+            <span className="home-section-label">
+              <span className="home-section-time-icon">{'\uD83C\uDF75'}</span>
+              PM Tea Time
+            </span>
             <h2 className="home-section-title">ESG 최신 뉴스</h2>
           </div>
           <Link to="/article/pmList" className="more-link">

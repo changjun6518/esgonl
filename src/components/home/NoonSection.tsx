@@ -10,11 +10,14 @@ export default function NoonSection() {
   const data = articles as Article[];
 
   return (
-    <section className="home-section">
+    <section className="home-section section-noon">
       <div className="home-section-inner">
         <div className="home-section-header">
           <div className="home-section-title-group">
-            <span className="home-section-label">Noon Lunch Box</span>
+            <span className="home-section-label">
+              <span className="home-section-time-icon">{'\u2600'}</span>
+              Noon Lunch Box
+            </span>
             <h2 className="home-section-title">오늘 배우는 ESG 키워드</h2>
           </div>
           <Link to="/article/noonList" className="more-link">

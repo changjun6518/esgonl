@@ -1,4 +1,8 @@
-/* 부가 페이지 공통 */
+/* ============================================
+   Supplementary Pages
+   ============================================ */
+
+/* Page Container */
 .page-container {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -13,11 +17,14 @@
   margin-bottom: var(--spacing-2xl);
 }
 
-/* About 페이지 */
+/* ============================================
+   About Page
+   ============================================ */
+
 .about-hero {
   text-align: center;
-  padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  background: var(--color-primary);
   color: #ffffff;
   margin-bottom: var(--spacing-2xl);
 }
@@ -26,15 +33,17 @@
   font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-md);
+  letter-spacing: -1px;
 }
 
 .about-hero-logo .logo-dot {
-  color: #4CAF50;
+  color: #6BCB77;
 }
 
 .about-hero-tagline {
   font-size: var(--font-size-lg);
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: var(--font-weight-regular);
 }
 
 .about-content {
@@ -61,7 +70,6 @@
   line-height: var(--line-height-loose);
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
-  word-break: keep-all;
 }
 
 .about-editors {
@@ -74,13 +82,18 @@
 .about-editor-card {
   text-align: center;
   padding: var(--spacing-xl);
-  background: var(--color-bg-section);
+  background: var(--color-bg-light);
   border-radius: var(--border-radius-lg);
+  transition: box-shadow var(--transition-base);
+}
+
+.about-editor-card:hover {
+  box-shadow: var(--shadow-sm);
 }
 
 .about-editor-avatar {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: var(--color-primary);
   color: #fff;
@@ -103,17 +116,25 @@
   color: var(--color-text-light);
 }
 
-/* FAQ 페이지 */
+/* ============================================
+   FAQ Page
+   ============================================ */
+
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .faq-item {
   border: 1px solid var(--color-border-light);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item.open {
+  border-color: var(--color-border);
 }
 
 .faq-question {
@@ -135,10 +156,11 @@
 }
 
 .faq-arrow {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   transition: transform var(--transition-fast);
   flex-shrink: 0;
   margin-left: var(--spacing-md);
+  color: var(--color-text-muted);
 }
 
 .faq-item.open .faq-arrow {
@@ -157,7 +179,10 @@
   display: block;
 }
 
-/* 문의하기 */
+/* ============================================
+   Enquire (Contact) Page
+   ============================================ */
+
 .enquire-form {
   display: flex;
   flex-direction: column;
@@ -179,19 +204,20 @@
 .form-input,
 .form-textarea,
 .form-select {
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: 10px var(--spacing-md);
   border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius);
   font-size: var(--font-size-base);
   color: var(--color-text);
   transition: border-color var(--transition-fast);
+  background: var(--color-bg);
 }
 
 .form-input:focus,
 .form-textarea:focus,
 .form-select:focus {
   outline: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-primary);
 }
 
 .form-textarea {
@@ -200,11 +226,11 @@
 }
 
 .form-submit {
-  padding: var(--spacing-md) var(--spacing-xl);
+  padding: 12px var(--spacing-xl);
   background-color: var(--color-primary);
   color: #ffffff;
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   border-radius: var(--border-radius);
   transition: background-color var(--transition-fast);
   align-self: center;
@@ -214,7 +240,10 @@
   background-color: var(--color-secondary);
 }
 
-/* 공지사항 */
+/* ============================================
+   Notice Page
+   ============================================ */
+
 .notice-list {
   display: flex;
   flex-direction: column;
@@ -247,7 +276,10 @@
   margin-left: var(--spacing-lg);
 }
 
-/* 검색 */
+/* ============================================
+   Search Page
+   ============================================ */
+
 .search-page-form {
   display: flex;
   gap: var(--spacing-sm);
@@ -256,9 +288,9 @@
 
 .search-page-input {
   flex: 1;
-  padding: var(--spacing-md);
+  padding: 12px var(--spacing-md);
   border: 2px solid var(--color-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   font-size: var(--font-size-base);
   transition: border-color var(--transition-fast);
 }
@@ -269,12 +301,12 @@
 }
 
 .search-page-btn {
-  padding: var(--spacing-md) var(--spacing-xl);
+  padding: 12px var(--spacing-xl);
   background-color: var(--color-primary);
   color: #ffffff;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   transition: background-color var(--transition-fast);
 }
 

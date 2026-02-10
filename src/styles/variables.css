@@ -1,36 +1,76 @@
 :root {
-  /* 색상 */
-  --color-primary: #1a1a2e;
-  --color-secondary: #16213e;
-  --color-accent: #0f3460;
+  /* === Base Colors === */
+  --color-primary: #1C1C28;
+  --color-secondary: #2A2A3C;
   --color-bg: #ffffff;
-  --color-bg-light: #f8f9fa;
+  --color-bg-light: #f7f7fa;
   --color-bg-section: #fafafa;
-  --color-text: #333333;
-  --color-text-light: #666666;
-  --color-text-muted: #999999;
-  --color-border: #e0e0e0;
-  --color-border-light: #f0f0f0;
-  --color-link: #0f3460;
-  --color-link-hover: #1a1a2e;
+  --color-text: #2A2A3C;
+  --color-text-light: #6B6B80;
+  --color-text-muted: #9B9BB0;
+  --color-border: #E5E5EE;
+  --color-border-light: #F0F0F5;
+  --color-link: #2A2A3C;
+  --color-link-hover: #1C1C28;
 
-  /* 타이포그래피 */
-  --font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 16px;
-  --font-size-lg: 18px;
-  --font-size-xl: 24px;
-  --font-size-2xl: 32px;
-  --font-size-3xl: 40px;
+  /* === AM Section - Morning Coffee === */
+  --am-bg: #fdf8f3;
+  --am-bg-subtle: #f8f0e6;
+  --am-accent: #8B5E3C;
+  --am-accent-hover: #6d4830;
+  --am-accent-light: rgba(139, 94, 60, 0.1);
+  --am-text: #5C3D24;
+  --am-gradient: linear-gradient(180deg, #fdf8f3 0%, #f5ebe0 100%);
+  --am-dot: #C49A6C;
+
+  /* === Noon Section - Lunch Learning === */
+  --noon-bg: #f2f8f5;
+  --noon-bg-subtle: #e5f2eb;
+  --noon-accent: #2E7D52;
+  --noon-accent-hover: #236841;
+  --noon-accent-light: rgba(46, 125, 82, 0.1);
+  --noon-text: #1A5C38;
+  --noon-gradient: linear-gradient(180deg, #f2f8f5 0%, #e0f0e8 100%);
+  --noon-dot: #5BA07A;
+
+  /* === Snack Section - Fortune Cookie === */
+  --snack-bg: #fff7eb;
+  --snack-bg-subtle: #ffeed4;
+  --snack-accent: #C47A2A;
+  --snack-accent-hover: #a86520;
+  --snack-accent-light: rgba(196, 122, 42, 0.1);
+  --snack-text: #8C5A1E;
+  --snack-gradient: linear-gradient(180deg, #fff7eb 0%, #ffe8c8 100%);
+  --snack-dot: #E6A95E;
+
+  /* === PM Section - Evening Tea === */
+  --pm-bg: #f3f1f9;
+  --pm-bg-subtle: #e8e4f4;
+  --pm-accent: #5B4A8A;
+  --pm-accent-hover: #483974;
+  --pm-accent-light: rgba(91, 74, 138, 0.1);
+  --pm-text: #3D3262;
+  --pm-gradient: linear-gradient(180deg, #f3f1f9 0%, #e4e0f2 100%);
+  --pm-dot: #8878B5;
+
+  /* === Typography === */
+  --font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --line-height-tight: 1.3;
   --line-height-base: 1.6;
   --line-height-loose: 1.8;
 
-  /* 간격 */
+  /* === Spacing === */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -38,21 +78,26 @@
   --spacing-xl: 32px;
   --spacing-2xl: 48px;
   --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
 
-  /* 레이아웃 */
+  /* === Layout === */
   --max-width: 1200px;
   --content-width: 800px;
-  --header-height: 64px;
+  --header-height: 60px;
   --border-radius: 8px;
   --border-radius-sm: 4px;
   --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
 
-  /* 그림자 */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  /* === Shadows === */
+  --shadow-xs: 0 1px 2px rgba(28, 28, 40, 0.04);
+  --shadow-sm: 0 1px 4px rgba(28, 28, 40, 0.06);
+  --shadow-md: 0 4px 16px rgba(28, 28, 40, 0.08);
+  --shadow-lg: 0 8px 32px rgba(28, 28, 40, 0.1);
+  --shadow-xl: 0 16px 48px rgba(28, 28, 40, 0.12);
 
-  /* 전환 */
+  /* === Transitions === */
   --transition-fast: 0.15s ease;
-  --transition-base: 0.3s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
 }
