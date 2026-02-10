@@ -1,62 +1,92 @@
 [
   {
-    "idx": 296,
-    "category": "ESG 최신 뉴스",
-    "title": "기업 ESG 선언과 실제 행동의 괴리, 소비자 인식 변화",
-    "summary": "ESG를 선언하는 기업과 실제 행동 사이의 괴리에 대한 소비자 인식 조사 결과를 분석합니다.",
-    "thumbnail": "/images/pm/article-296.jpg",
-    "author": "Editor L",
-    "date": "2026.02.09",
+    "idx": 292,
+    "category": "국내동향",
+    "title": "기업이 말하는 ESG, 소비자가 느끼는 ESG",
+    "summary": "기업 ESG 보고서와 실제 행동의 괴리, 소비자가 느끼는 진정한 ESG 경영이란 무엇인지 분석합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260208/5471ae0b06bcec056cf27b948051ca37.jpg",
+    "author": "Editor N",
+    "date": "2026.02.05",
     "tags": ["ESG", "소비자", "그린워싱"]
   },
   {
-    "idx": 283,
-    "category": "ESG 최신 뉴스",
-    "title": "습지 보전 정책, 새로운 전환점을 맞다",
-    "summary": "국내 습지 보전 정책의 최신 동향과 생태계 서비스 가치 평가 방법론을 소개합니다.",
-    "thumbnail": "/images/pm/article-283.jpg",
-    "author": "Editor O",
-    "date": "2026.02.08",
+    "idx": 290,
+    "category": "국내동향",
+    "title": "세계 습지의 날을 맞아 생각해보는, '우리에게 습지란?'",
+    "summary": "한국 갯벌은 지구 생물다양성 보존을 위해 세계적으로 중요한 서식지입니다. 세계 습지의 날을 맞아 습지의 가치를 살펴봅니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260201/6760232afa2b5d4cf90a6a00b406447a.jpg",
+    "author": "Editor N",
+    "date": "2026.02.02",
     "tags": ["습지", "환경정책", "생태계"]
   },
   {
-    "idx": 282,
-    "category": "ESG 최신 뉴스",
-    "title": "고향사랑기부제, 지역 ESG의 새로운 모델",
+    "idx": 288,
+    "category": "국내동향",
+    "title": "지역과 개인을 잇는 작은 기부, 고향사랑기부제",
     "summary": "고향사랑기부제가 지역 사회의 지속가능한 발전에 기여하는 효과를 분석합니다.",
-    "thumbnail": "/images/pm/article-282.jpg",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260129/84e3b1131e6ecee3b8ed03861faa0228.jpg",
     "author": "Editor N",
-    "date": "2026.02.07",
+    "date": "2026.01.29",
     "tags": ["고향사랑기부제", "지역사회", "ESG"]
   },
   {
-    "idx": 281,
-    "category": "ESG 최신 뉴스",
-    "title": "탄소중립 달성을 위한 글로벌 기업의 새로운 전략",
-    "summary": "주요 글로벌 기업들의 탄소중립 로드맵과 실행 현황을 정리합니다.",
-    "thumbnail": "/images/pm/article-281.jpg",
-    "author": "Editor L",
-    "date": "2026.02.06",
-    "tags": ["탄소중립", "기후변화"]
-  },
-  {
-    "idx": 280,
-    "category": "ESG 최신 뉴스",
-    "title": "공급망 실사법, 기업 준비 현황은",
-    "summary": "EU 공급망 실사법 시행에 앞서 국내 기업들의 대응 전략을 살펴봅니다.",
-    "thumbnail": "/images/pm/article-280.jpg",
-    "author": "Editor O",
-    "date": "2026.02.05",
-    "tags": ["공급망", "실사법", "EU"]
-  },
-  {
-    "idx": 279,
-    "category": "ESG 최신 뉴스",
-    "title": "재생에너지 전환, 어디까지 왔나",
-    "summary": "국내 재생에너지 보급 현황과 RE100 이행 실적을 분석합니다.",
-    "thumbnail": "/images/pm/article-279.jpg",
+    "idx": 286,
+    "category": "국내동향",
+    "title": "두쫀쿠, 달콤한 유행 뒤에 가려진 불편한 진실",
+    "summary": "유행하는 디저트 두쫀쿠의 달콤함 뒤에 숨겨진 환경과 사회적 문제를 ESG 관점에서 분석합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260208/5471ae0b06bcec056cf27b948051ca37.jpg",
     "author": "Editor N",
-    "date": "2026.02.04",
-    "tags": ["재생에너지", "RE100"]
+    "date": "2026.01.27",
+    "tags": ["ESG", "식품", "환경"]
+  },
+  {
+    "idx": 283,
+    "category": "국내동향",
+    "title": "2025년, 국내 ESG를 이끈 주역들 - 국내 주요 ESG시상식 살펴보기",
+    "summary": "2025년 국내 주요 ESG 시상식을 통해 ESG 경영을 선도한 기업과 인물을 살펴봅니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260201/6760232afa2b5d4cf90a6a00b406447a.jpg",
+    "author": "Editor N",
+    "date": "2026.01.21",
+    "tags": ["ESG시상식", "기업", "경영"]
+  },
+  {
+    "idx": 281,
+    "category": "ESG 도서",
+    "title": "기후를 위한 경제학",
+    "summary": "기후변화에 대응하기 위한 경제학적 접근과 정책 방향을 다룬 도서를 소개합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260129/84e3b1131e6ecee3b8ed03861faa0228.jpg",
+    "author": "Editor N",
+    "date": "2026.01.15",
+    "tags": ["기후변화", "경제학", "도서"]
+  },
+  {
+    "idx": 278,
+    "category": "국내동향",
+    "title": "노인과 함께 어우러지는 사회를 상상하다",
+    "summary": "고령화 사회에서 노인과 함께 어우러지는 지속가능한 사회를 만들기 위한 방향을 모색합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260208/5471ae0b06bcec056cf27b948051ca37.jpg",
+    "author": "Editor N",
+    "date": "2026.01.09",
+    "tags": ["고령화", "사회", "복지"]
+  },
+  {
+    "idx": 272,
+    "category": "국내동향",
+    "title": "메리 그린 크리스마스(Merry Green Christmas)!",
+    "summary": "크리스마스 시즌의 환경 영향과 친환경 크리스마스를 보내는 방법을 소개합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260201/6760232afa2b5d4cf90a6a00b406447a.jpg",
+    "author": "Editor N",
+    "date": "2025.12.24",
+    "tags": ["친환경", "크리스마스", "환경"]
+  },
+  {
+    "idx": 271,
+    "category": "국내동향",
+    "title": "CSR과 ESG, 지속가능경영의 두 기둥",
+    "summary": "CSR(기업의 사회적 책임)과 ESG의 차이점과 상호보완적 관계를 분석합니다.",
+    "thumbnail": "https://www.esgonl.kr/public/upload/20260129/84e3b1131e6ecee3b8ed03861faa0228.jpg",
+    "author": "Editor N",
+    "date": "2025.12.23",
+    "tags": ["CSR", "ESG", "지속가능경영"]
   }
 ]

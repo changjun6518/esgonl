@@ -6,10 +6,6 @@ import 'swiper/css/pagination';
 import articles from '../../data/articles-noon.json';
 import type { Article } from '../../types';
 
-const placeholderImg = 'data:image/svg+xml,' + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="%23e3f2fd"><rect width="400" height="250"/><text x="200" y="130" text-anchor="middle" fill="%23666" font-size="16" font-family="sans-serif">Noon Lunch Box</text></svg>'
-);
-
 export default function NoonSection() {
   const data = articles as Article[];
 
@@ -41,7 +37,7 @@ export default function NoonSection() {
               <Link to={`/article/noonDetail?idx=${article.idx}`} className="carousel-card">
                 <img
                   className="carousel-card-image"
-                  src={placeholderImg}
+                  src={article.thumbnail}
                   alt={article.title}
                   loading="lazy"
                 />

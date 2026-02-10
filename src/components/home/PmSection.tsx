@@ -6,10 +6,6 @@ import 'swiper/css/pagination';
 import articles from '../../data/articles-pm.json';
 import type { Article } from '../../types';
 
-const placeholderImg = 'data:image/svg+xml,' + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="%23fff3e0"><rect width="400" height="250"/><text x="200" y="130" text-anchor="middle" fill="%23999" font-size="16" font-family="sans-serif">PM Tea Time</text></svg>'
-);
-
 export default function PmSection() {
   const data = articles as Article[];
 
@@ -41,7 +37,7 @@ export default function PmSection() {
               <Link to={`/article/pmDetail?idx=${article.idx}`} className="carousel-card">
                 <img
                   className="carousel-card-image"
-                  src={placeholderImg}
+                  src={article.thumbnail}
                   alt={article.title}
                   loading="lazy"
                 />

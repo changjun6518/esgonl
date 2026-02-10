@@ -12,19 +12,6 @@ const sectionDetailPath: Record<string, string> = {
   pm: '/article/pmDetail',
 };
 
-const placeholderColors: Record<string, string> = {
-  am: '%23e8edf3',
-  noon: '%23e3f2fd',
-  pm: '%23fff3e0',
-};
-
-function getPlaceholder(section: SectionType, title: string) {
-  const color = placeholderColors[section] || '%23e8edf3';
-  return 'data:image/svg+xml,' + encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="${color}"><rect width="400" height="250"/><text x="200" y="125" text-anchor="middle" fill="%23999" font-size="14" font-family="sans-serif">${title.slice(0, 20)}</text></svg>`
-  );
-}
-
 export default function ArticleCard({ article, section }: Props) {
   const detailPath = sectionDetailPath[section];
 
@@ -32,7 +19,7 @@ export default function ArticleCard({ article, section }: Props) {
     <Link to={`${detailPath}?idx=${article.idx}`} className="article-card">
       <img
         className="article-card-image"
-        src={getPlaceholder(section, article.title)}
+        src={article.thumbnail}
         alt={article.title}
         loading="lazy"
       />
