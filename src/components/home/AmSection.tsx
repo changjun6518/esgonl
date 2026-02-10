@@ -1,0 +1,64 @@
+import { Link } from 'react-router';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import articles from '../../data/articles-am.json';
+import type { Article } from '../../types';
+
+const placeholderImg = 'data:image/svg+xml,' + encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="%23e8edf3"><rect width="400" height="250"/><text x="200" y="130" text-anchor="middle" fill="%23999" font-size="16" font-family="sans-serif">AM Coffee &amp; Bagel</text></svg>'
+);
+
+export default function AmSection() {
+  const data = articles as Article[];
+
+  return (
+    <section className="home-section">
+      <div className="home-section-inner">
+        <div className="home-section-header">
+          <div className="home-section-title-group">
+            <span className="home-section-label">AM Coffee & Bagel</span>
+            <h2 className="home-section-title">기획기사, 인터뷰</h2>
+          </div>
+          <Link to="/article/amList" className="more-link">
+            More &rarr;
+          </Link>
+        </div>
+
+        <Swiper
+          modules={[Pagination]}
+          spaceBetween={24}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {data.slice(0, 6).map((article) => (
+            <SwiperSlide key={article.idx}>
+              <Link to={`/article/amDetail?idx=${article.idx}`} className="carousel-card">
+                <img
+                  className="carousel-card-image"
+                  src={placeholderImg}
+                  alt={article.title}
+                  loading="lazy"
+                />
+                <div className="carousel-card-body">
+                  <span className="carousel-card-category">{article.category}</span>
+                  <h3 className="carousel-card-title">{article.title}</h3>
+                  <p className="carousel-card-summary">{article.summary}</p>
+                  <div className="carousel-card-meta">
+                    <span>{article.author} · {article.date}</span>
+                    <span className="carousel-card-readmore">보러가기 &rarr;</span>
+                  </div>
+                </div>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+}

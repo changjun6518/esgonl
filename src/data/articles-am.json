@@ -1,0 +1,62 @@
+[
+  {
+    "idx": 294,
+    "category": "기획기사, 인터뷰",
+    "title": "ESG와 DEI 보고서: 추상적 가치를 측정 가능한 데이터로",
+    "summary": "DEI(다양성·형평성·포용성) 보고서는 기업이 추상적인 가치를 어떻게 측정 가능한 데이터로 전환하는지를 보여줍니다.",
+    "thumbnail": "/images/am/article-294.jpg",
+    "author": "Editor L",
+    "date": "2026.02.09",
+    "tags": ["DEI", "지속가능경영", "보고서"]
+  },
+  {
+    "idx": 293,
+    "category": "기획기사",
+    "title": "탈가정 청년, 사회가 함께 풀어야 할 과제",
+    "summary": "가정을 떠난 청년들의 현실과 사회적 지원 체계의 필요성을 살펴봅니다.",
+    "thumbnail": "/images/am/article-293.jpg",
+    "author": "Editor O",
+    "date": "2026.02.08",
+    "tags": ["사회", "청년", "복지"]
+  },
+  {
+    "idx": 292,
+    "category": "기획기사",
+    "title": "멸종위기 야생동물 보호, 얼룩말에서 배우다",
+    "summary": "생물 다양성 보전의 중요성과 기업의 역할을 야생동물 보호 사례를 통해 알아봅니다.",
+    "thumbnail": "/images/am/article-292.jpg",
+    "author": "Editor N",
+    "date": "2026.02.07",
+    "tags": ["환경", "생물다양성", "야생동물"]
+  },
+  {
+    "idx": 291,
+    "category": "인터뷰",
+    "title": "지속가능한 패션의 미래를 말하다",
+    "summary": "패션 업계의 ESG 트렌드와 지속가능한 소재 혁신에 대해 전문가의 의견을 들어봅니다.",
+    "thumbnail": "/images/am/article-291.jpg",
+    "author": "Editor L",
+    "date": "2026.02.06",
+    "tags": ["패션", "지속가능성"]
+  },
+  {
+    "idx": 290,
+    "category": "기획기사",
+    "title": "순환경제로 가는 길, 폐기물의 재탄생",
+    "summary": "폐기물을 자원으로 전환하는 순환경제 모델과 성공 사례를 분석합니다.",
+    "thumbnail": "/images/am/article-290.jpg",
+    "author": "Editor O",
+    "date": "2026.02.05",
+    "tags": ["순환경제", "폐기물", "환경"]
+  },
+  {
+    "idx": 289,
+    "category": "기획기사, 인터뷰",
+    "title": "ESG 경영 평가, 어디까지 왔나",
+    "summary": "국내외 ESG 평가 기관의 현황과 기업들이 평가에 대응하는 전략을 살펴봅니다.",
+    "thumbnail": "/images/am/article-289.jpg",
+    "author": "Editor N",
+    "date": "2026.02.04",
+    "tags": ["ESG평가", "경영"]
+  }
+]

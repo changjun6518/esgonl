@@ -1,0 +1,62 @@
+[
+  {
+    "idx": 296,
+    "category": "ESG 최신 뉴스",
+    "title": "기업 ESG 선언과 실제 행동의 괴리, 소비자 인식 변화",
+    "summary": "ESG를 선언하는 기업과 실제 행동 사이의 괴리에 대한 소비자 인식 조사 결과를 분석합니다.",
+    "thumbnail": "/images/pm/article-296.jpg",
+    "author": "Editor L",
+    "date": "2026.02.09",
+    "tags": ["ESG", "소비자", "그린워싱"]
+  },
+  {
+    "idx": 283,
+    "category": "ESG 최신 뉴스",
+    "title": "습지 보전 정책, 새로운 전환점을 맞다",
+    "summary": "국내 습지 보전 정책의 최신 동향과 생태계 서비스 가치 평가 방법론을 소개합니다.",
+    "thumbnail": "/images/pm/article-283.jpg",
+    "author": "Editor O",
+    "date": "2026.02.08",
+    "tags": ["습지", "환경정책", "생태계"]
+  },
+  {
+    "idx": 282,
+    "category": "ESG 최신 뉴스",
+    "title": "고향사랑기부제, 지역 ESG의 새로운 모델",
+    "summary": "고향사랑기부제가 지역 사회의 지속가능한 발전에 기여하는 효과를 분석합니다.",
+    "thumbnail": "/images/pm/article-282.jpg",
+    "author": "Editor N",
+    "date": "2026.02.07",
+    "tags": ["고향사랑기부제", "지역사회", "ESG"]
+  },
+  {
+    "idx": 281,
+    "category": "ESG 최신 뉴스",
+    "title": "탄소중립 달성을 위한 글로벌 기업의 새로운 전략",
+    "summary": "주요 글로벌 기업들의 탄소중립 로드맵과 실행 현황을 정리합니다.",
+    "thumbnail": "/images/pm/article-281.jpg",
+    "author": "Editor L",
+    "date": "2026.02.06",
+    "tags": ["탄소중립", "기후변화"]
+  },
+  {
+    "idx": 280,
+    "category": "ESG 최신 뉴스",
+    "title": "공급망 실사법, 기업 준비 현황은",
+    "summary": "EU 공급망 실사법 시행에 앞서 국내 기업들의 대응 전략을 살펴봅니다.",
+    "thumbnail": "/images/pm/article-280.jpg",
+    "author": "Editor O",
+    "date": "2026.02.05",
+    "tags": ["공급망", "실사법", "EU"]
+  },
+  {
+    "idx": 279,
+    "category": "ESG 최신 뉴스",
+    "title": "재생에너지 전환, 어디까지 왔나",
+    "summary": "국내 재생에너지 보급 현황과 RE100 이행 실적을 분석합니다.",
+    "thumbnail": "/images/pm/article-279.jpg",
+    "author": "Editor N",
+    "date": "2026.02.04",
+    "tags": ["재생에너지", "RE100"]
+  }
+]

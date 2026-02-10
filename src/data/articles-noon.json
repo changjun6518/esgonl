@@ -1,0 +1,62 @@
+[
+  {
+    "idx": 295,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "블루본드(Blue Bond)",
+    "summary": "해양 환경 보호를 위한 특수 목적 채권, 블루본드의 개념과 투자 동향을 알아봅니다.",
+    "thumbnail": "/images/noon/article-295.jpg",
+    "author": "Editor L",
+    "date": "2026.02.09",
+    "tags": ["블루본드", "해양환경", "ESG투자"]
+  },
+  {
+    "idx": 288,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "노동이사제",
+    "summary": "노동자가 이사회에 참여하는 노동이사제의 의미와 지배구조 혁신 효과를 살펴봅니다.",
+    "thumbnail": "/images/noon/article-288.jpg",
+    "author": "Editor O",
+    "date": "2026.02.08",
+    "tags": ["노동이사제", "지배구조", "거버넌스"]
+  },
+  {
+    "idx": 287,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "TCFD (기후변화 재무정보공개 태스크포스)",
+    "summary": "기후변화가 기업 재무에 미치는 영향을 공시하는 TCFD 프레임워크를 해설합니다.",
+    "thumbnail": "/images/noon/article-287.jpg",
+    "author": "Editor N",
+    "date": "2026.02.07",
+    "tags": ["TCFD", "기후변화", "공시"]
+  },
+  {
+    "idx": 286,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "임팩트 투자(Impact Investing)",
+    "summary": "사회적·환경적 성과와 재무적 수익을 동시에 추구하는 투자 전략을 소개합니다.",
+    "thumbnail": "/images/noon/article-286.jpg",
+    "author": "Editor L",
+    "date": "2026.02.06",
+    "tags": ["임팩트투자", "ESG투자"]
+  },
+  {
+    "idx": 285,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "ISSB (국제지속가능성기준위원회)",
+    "summary": "글로벌 지속가능성 공시 기준을 만드는 ISSB의 역할과 최신 동향을 정리합니다.",
+    "thumbnail": "/images/noon/article-285.jpg",
+    "author": "Editor O",
+    "date": "2026.02.05",
+    "tags": ["ISSB", "공시기준", "지속가능성"]
+  },
+  {
+    "idx": 284,
+    "category": "오늘 배우는 ESG 키워드",
+    "title": "플라스틱 크레딧",
+    "summary": "플라스틱 폐기물 감축량을 크레딧으로 거래하는 새로운 환경 시장을 알아봅니다.",
+    "thumbnail": "/images/noon/article-284.jpg",
+    "author": "Editor N",
+    "date": "2026.02.04",
+    "tags": ["플라스틱", "환경", "크레딧"]
+  }
+]
